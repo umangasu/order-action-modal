@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import './orderAction';
+import OrderAction from "./orderAction";
+import MyAlert from "./modalComponents/Alert";
+import * as React from "react";
 
 function App() {
+    const [severity, setSeverity] = React.useState('');
+    const [alertTitle, setAlertTitle] = React.useState('');
+    const [alertMessage, setAlertMessage] = React.useState('');
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <OrderAction setSeverity={setSeverity} setAlertTitle={setAlertTitle} setAlertMessage={setAlertMessage}/>
+        {severity!='' && <MyAlert severity={severity} alertTitle={alertTitle} alertMessage={alertMessage}/>}
     </div>
   );
 }

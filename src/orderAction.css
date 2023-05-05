@@ -1,0 +1,57 @@
+.main {
+    height: 330px;
+    width: 600px;
+    display: flex;
+}
+
+.div1 {
+    width: 50%;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.div2 {
+    width: 50%;
+    padding: 32px;
+    background-color: #f6f4f1;
+    border-radius: 15px;
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 12px;
+}
+
+.section1-left p {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+.section2 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    font-size: 12px;
+}
+
+.section2 p {
+    padding: 0;
+    margin: 0 0 12px;
+}
+
+.section2-right {
+    text-align: right;
+}
+
+
+.clear {
+    position: absolute;
+    left: 95%;
+    top: 3%;
+}
